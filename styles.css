@@ -188,13 +188,13 @@ h1{
 }
 
 .parameter p:first-of-type{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 .parameter p:last-of-type{
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .form-container{
