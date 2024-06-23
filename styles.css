@@ -1,0 +1,237 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --colorDark:#00004d ;
+    --colorDark2:#02021f;
+    --light1:#e6e6e6;
+    --light2:#f2f2f2;
+}
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    color: var(--light1);
+    background-image: linear-gradient(160deg,#112d4e 100%,#3f72a3 0%);
+
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    
+}
+.tab-container{
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+    margin-top: 1rem;
+}
+.tab{
+    color: whitesmoke;
+    font-size: 0.875rem;
+    letter-spacing: 1.575px;
+    padding:5px 8px;
+}
+.tab.current-tab{
+    background-color:beige;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border-radius: 4px;
+    font-size: 0.875rem;
+    letter-spacing: 1.575px;
+    padding:5px 8px;
+}
+.weather-container{
+  
+    margin-block: 4rem;
+}
+.btn{
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    background-color: rgb(43, 41, 103);
+    padding: 5px;
+    border: rgb(243, 225, 225);
+    border-radius: 3px solid red;
+    color: rgb(243, 221, 191);
+    cursor: pointer;
+}
+
+.sub-container{
+    flex-direction: column;
+    /* margin: 3px 2px; */
+    align-items: center;
+    /* border: 2px solid grey; */
+    /* border-radius: 10px; */
+    padding:5px 5px;
+    gap: 3px;
+}
+
+.grant-location-container{
+    display: none;
+}
+
+.grant-location-container.active{
+    display: flex;
+}
+
+
+.grant-location-container img{
+    margin-bottom: 1rem;
+
+}
+.grant-location-container p:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.grant-location-container P:last-of-type{
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+
+}
+
+.loading-container{
+    display: none;
+}
+.loading-container.active{
+    display: flex;
+}
+
+.loading-container{
+    text-transform: uppercase;
+
+}
+
+.user-info-container{
+    display: none;
+}
+.user-info-container.active{
+    display: flex;;
+}
+
+.name{
+    display: flex;
+    /* gap: 1rem; */
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.name p[data-cityName]{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.user-info-container img{
+    width: 90px;
+    height: 90px;
+}
+.name img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.user-info-container p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.user-info-container p[data-temp]{
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+
+.parameter-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.parameter{
+    width: 30%;
+    max-width: 200px;
+    background-color: rgb(172, 165, 165);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.parameter img{
+    width: 50px;
+    height: 50px;
+
+}
+
+.parameter p:first-of-type{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form-container{
+    display: none;
+}
+.form-container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 550px;
+    justify-content: center; 
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+.form-container.active{
+    display: flex;
+}
+
+.form-container input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    background-color: rgb(172, 165, 165);
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.form-container input::placeholder{
+    color: whitesmoke;
+}
+.form-container input:focus{
+    outline: 2.5px solid whitesmoke;
+}
+
+.form-container .btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+
