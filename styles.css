@@ -169,7 +169,7 @@ h1{
 }
 .parameter{
     width: 33%;
-    max-width: 200px;
+    max-width: 300px;
     background-color: rgb(172, 165, 165);
     border-radius: 5px;
     box-sizing: border-box;
@@ -190,12 +190,12 @@ h1{
 }
 
 .parameter p:first-of-type{
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .parameter p:last-of-type{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -249,7 +249,10 @@ h1{
         flex-direction: column;
         gap: 10px;
         justify-content: center;
+        align-items: center;
         margin-top: 2rem;
+        width: 100%;
+        
     }
     
     .parameter{
