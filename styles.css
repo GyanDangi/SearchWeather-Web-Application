@@ -170,7 +170,7 @@ h1{
 .parameter{
     width: 33%;
     max-width: 300px;
-    background-color: rgb(172, 165, 165);
+    background-color: #679bcb;
     border-radius: 5px;
     box-sizing: border-box;
     color: whitesmoke;
@@ -219,7 +219,7 @@ h1{
     all: unset;
     width: calc(100% - 80px);
     height: 40px;
-    background-color: rgb(172, 165, 165);
+    background-color: #679bcb;;
     border-radius: 10px;
     padding: 0 20px;
 }
